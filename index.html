@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="Sebastian Noriega">
+  <meta name="description" content="Portafolio de desarrollo web de Sebastian Noriega">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo Pagina -->
+  <title>Sebastian Noriega | Desarrollo Web Front-End</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Iconos Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#"><img src="imagenes/icono.png" width="50" alt="Logo de la página web"></a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about-me">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#comments">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero (Principal) -->
+  <!-- Es lo primero que vera el cliente al acceder a la pagina web -->
+  <!-- En section: hero es clase personalizada. align-items-stretch es clase de bootstrap -->
+  <!-- En div: hero-principal es clase personalizada. Las demas son clases de bootstrap -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-profile-picture" src="imagenes/desarrollador5.svg" alt="Foto de Sebastian Noriega">
+      <h1>Hola, soy Sebastian Noriega</h1>
+      <h2>Desarrollo sitios web y escribo artículos sobre programación</h2>
+    </div>
+    <div class="hero-lower">
+      <!-- img-fluid es una clase de Bootstrap que permite que la imagen se adapte al ancho del navegador. Que la imagen sea responsiva, es decir, adaptable a distintos tamaños -->
+      <img class="hero-lower-image img-fluid" src="imagenes/hero-inferior.svg" alt="Imagen lenguajes de programacion">
+    </div>
+  </section>
+
+  <!-- Section About Me -->
+  <section id="about-me" class="about-me dark-section">
+    <div class="container">
+      <h2 class="section-title">Conoce a Sebastian Noriega</h2>
+      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus non est
+        interdum, at placerat lorem euismod. Suspendisse rhoncus ante accumsan dui feugiat tristique. Nullam eros purus,
+        venenatis ut finibus nec, bibendum vitae ex. Aenean mauris lacus, interdum sit amet dignissim in, tincidunt
+        ullamcorper felis. Ut dignissim posuere dui vitae scelerisque. Vestibulum pulvinar libero neque, ut venenatis
+        quam viverra quis. Ut imperdiet ut tortor ut dignissim. Curabitur dignissim facilisis mollis. Orci varius
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vitae rhoncus turpis.
+        Pellentesque feugiat tempor nisl. Nulla facilisi. In auctor metus at varius rutrum.</p>
+    </div>
+  </section>
+
+  <!-- Section Experience and Education -->
+  <section class="experience light-section">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Desarrollo web -->
+        <div class="column col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experience-title">Desarrollo Web</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus non est
+            interdum, at placerat lorem euismod. Suspendisse rhoncus ante accumsan dui feugiat tristique. Nullam eros
+            purus,
+            venenatis ut finibus nec, bibendum vitae ex.</p>
+          <div class="badges-containes">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+          </div>
+        </div>
+        <!-- Articulos -->
+        <div class="column col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experience-title">Articulos</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus non est
+            interdum, at placerat lorem euismod. Suspendisse rhoncus ante accumsan dui feugiat tristique. Nullam eros
+            purus,
+            venenatis ut finibus nec, bibendum vitae ex.</p>
+          <div class="badges-containes">
+            <span class="badge text-bg-primary">Escribir</span>
+            <span class="badge text-bg-primary">Editar</span>
+            <span class="badge text-bg-primary">Blogs</span>
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class=" column col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experience-title">Estudios</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus non est
+            interdum, at placerat lorem euismod. Suspendisse rhoncus ante accumsan dui feugiat tristique. Nullam eros
+            purus,
+            venenatis ut finibus nec, bibendum vitae ex.</p>
+          <div class="badges-containes">
+            <span class="badge text-bg-primary">FreeCodeCamp</span>
+            <span class="badge text-bg-primary">Udemy</span>
+            <span class="badge text-bg-primary">Youtube</span>
+            <span class="badge text-bg-primary">Desarrollo Web</span>
+            <span class="badge text-bg-primary">C#</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projects -->
+  <section id="projects" class="recent-projects light-section d-flex flex-column">
+    <h2 class="section-title black-text">Mis Proyectos</h2>
+    <h3 class="section-description">Estos son algunos proyectos que he creado recientemente...</h3>
+    <!-- Projects Galery -->
+    <div class="container text-center projects-container">
+      <div class="row">
+        <!-- Cambiar el enlace de mi github general por el de cada proyecto en especifico -->
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project">
+            <img src="imagenes/proyecto1.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Pequeña descripción del proyecto</p>
+              <div class="icons-container">
+                <!-- target="_blank": con esta propiedad se abre el enlace en una ventana nueva. rel="noopener noreferrer": esta propiedad es por seguridad al momento de abrir la pestaña nueva -->
+                <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <!-- La idea es en un futuro cambiar el enlace de freecodecamp por el enlace del proyecto desplegado -->
+                <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project">
+            <img src="imagenes/proyecto2.png" alt="Proyecto 2">
+            <div class="overlay">
+              <p>Pequeña descripción del proyecto</p>
+              <div class="icons-container">
+                <!-- target="_blank": con esta propiedad se abre el enlace en una ventana nueva. rel="noopener noreferrer": esta propiedad es por seguridad al momento de abrir la pestaña nueva -->
+                <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <!-- La idea es en un futuro cambiar el enlace de freecodecamp por el enlace del proyecto desplegado -->
+                <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project">
+            <img src="imagenes/proyecto3.png" alt="Proyecto 3">
+            <div class="overlay">
+              <p>Pequeña descripción del proyecto</p>
+              <div class="icons-container">
+                <!-- target="_blank": con esta propiedad se abre el enlace en una ventana nueva. rel="noopener noreferrer": esta propiedad es por seguridad al momento de abrir la pestaña nueva -->
+                <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <!-- La idea es en un futuro cambiar el enlace de freecodecamp por el enlace del proyecto desplegado -->
+                <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project">
+            <img src="imagenes/proyecto4.png" alt="Proyecto 4">
+            <div class="overlay">
+              <p>Pequeña descripción del proyecto</p>
+              <div class="icons-container">
+                <!-- target="_blank": con esta propiedad se abre el enlace en una ventana nueva. rel="noopener noreferrer": esta propiedad es por seguridad al momento de abrir la pestaña nueva -->
+                <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <!-- La idea es en un futuro cambiar el enlace de freecodecamp por el enlace del proyecto desplegado -->
+                <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project">
+            <img src="imagenes/proyecto5.png" alt="Proyecto 5">
+            <div class="overlay">
+              <p>Pequeña descripción del proyecto</p>
+              <div class="icons-container">
+                <!-- target="_blank": con esta propiedad se abre el enlace en una ventana nueva. rel="noopener noreferrer": esta propiedad es por seguridad al momento de abrir la pestaña nueva -->
+                <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <!-- La idea es en un futuro cambiar el enlace de freecodecamp por el enlace del proyecto desplegado -->
+                <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project">
+            <img src="imagenes/proyecto6.png" alt="Proyecto 6">
+            <div class="overlay">
+              <p>Pequeña descripción del proyecto</p>
+              <div class="icons-container">
+                <!-- target="_blank": con esta propiedad se abre el enlace en una ventana nueva. rel="noopener noreferrer": esta propiedad es por seguridad al momento de abrir la pestaña nueva -->
+                <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <!-- La idea es en un futuro cambiar el enlace de freecodecamp por el enlace del proyecto desplegado -->
+                <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Section Articles -->
+  <section class="articles justify-content-start">
+    <h2 class="section-title black-text">Artículos</h2>
+    <div class="card">
+      <div class="card-header">
+        Más recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Artículo 1</li>
+        </a>
+        <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Artículo 2</li>
+        </a>
+        <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Artículo 3</li>
+        </a>
+        <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Artículo 4</li>
+        </a>
+        <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Artículo 5</li>
+        </a>
+        <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Artículo 6</li>
+        </a>
+      </ul>
+    </div>
+    <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más artículos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Section Comments -->
+  <section id="comments" class="comments light-section">
+    <h2 class="section-title">Testimonios</h2>
+    <h3 class="section-description">Estos son algunos testimonios de mis clientes...</h3>
+
+    <!-- Carrusel -->
+    <div id="comments-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="comment-image rounded-circle" src="imagenes/cliente1.svg" alt="Cliente 1">
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus non
+              est interdum, at placerat lorem euismod. Suspendisse rhoncus ante accumsan dui feugiat tristique.</p>
+            <div class="comment-info">
+              <p class="client-name">Gino</p>
+              <p class="position">Gerente de proyectos en Desarrollo Web</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="comment-image rounded-circle" src="imagenes/cliente2.svg" alt="Cliente 2">
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus non
+              est interdum, at placerat lorem euismod. Suspendisse rhoncus ante accumsan dui feugiat tristique.</p>
+            <div class="comment-info">
+              <p class="client-name">Nora</p>
+              <p class="position">Gerente de DiseñaMiPaginaWeb</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="comment-image rounded-circle" src="imagenes/cliente3.svg" alt="Cliente 3">
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus non
+              est interdum, at placerat lorem euismod. Suspendisse rhoncus ante accumsan dui feugiat tristique.</p>
+            <div class="comment-info">
+              <p class="client-name">Leonardo</p>
+              <p class="position">Director de ApredeAProgramar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#comments-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#comments-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact dark-section">
+    <div class="container">
+      <div class="container text-center rectangle d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 section-title">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 description">
+            Contactame para iniciar tu proyecto de desarrollo web
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto: juans.noriega@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dark-section d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+    <p class="footer-text text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+    <div class="icons-social-media d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com/Juanseb3" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://github.com/Jusenome" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/juan-noriega-71466a96/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/jusenome/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto: juans.noriega@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope-check-fill"></i>
+      </a>
+    </div>
+    <div class="copyright">
+      Creado por Sebastian Noriega (2022) &#169;
+    </div>
+  </footer>
+
+  <!--Se recomienda que esta etiqueta de js de Bootstrap este ubicada aqui-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+/* Barra de navegacion  */
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+  /* width: 90%;
+  position: fixed;
+  z-index: 1; */
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos Generales */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* El tipo de letra es de Google Fonts */
+h1 {
+  font-size: 2.5rem;
+  font-family: "Rubik Dirt", cursive;
+}
+
+.dark-section {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.light-section {
+  color: black;
+  background-color: white;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+}
+
+.section-text {
+  font-size: 1.2rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.black-text {
+  color: black;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+/* Section Hero */
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/* Personalizando etiquetas h2 que esten ubicadas en elementos que tengan la clase indicada.          En este caso .hero-pricipal */
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+/* Section About Me */
+.about-me {
+  height: 500px;
+  padding: 10px;
+}
+
+.about-me .container {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Section Experience */
+.experience {
+  padding: 40px 40px 60px 40px;
+}
+
+.experience .column {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* Transition es el tiempo que tarda en hacer la transicion en este caso del hover abajo indicado */
+  transition: all 0.2s ease-in;
+}
+
+/* Con el hover estamos haciendo que al pasar el cursor por estos elementos cambia de color tanto el fondo como la letra */
+.experience .column:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.experience i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 6px 19px;
+  border-radius: 50%;
+}
+
+.experience-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-container {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Section Projects */
+.recent-projects {
+  padding: 40px;
+}
+
+.recent-projects img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.projects-container {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project {
+  position: relative;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.project:hover img {
+  opacity: 0.2;
+}
+
+/* Esto es lo que pasara cuando el mouse este sobre el elemento que tenga la clase project: el texto se hara visible */
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .icons-container {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/* Section Articles */
+.articles {
+  min-height: 500px;
+  padding: 30px;
+}
+
+.articles .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.articles .card-header {
+  font-weight: bold;
+}
+
+/* Section Comments */
+.comments {
+  padding: 40px 40px 80px 40px;
+}
+
+.comments .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-image {
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.comment-text {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.comment-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.comment-info p {
+  margin-bottom: 0;
+}
+
+.comment-info .client-name {
+  font-size: 1.2rem;
+}
+
+.comment-info .position {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/* Section Contact */
+.contact .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contact .rectangle {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contact .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact .description {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contact button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover i {
+  color: black;
+}
+
+/* Footer */
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.icons-social-media a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.icons-social-media i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.icons-social-media a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.icons-social-media a:hover i {
+  color: black;
+}
+
+.copyright {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+/* Ocultar imagen si la pantalla del dispositivo desde el que se accede es menor a x dimension */
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+/* Hace que el tamaño maximo de la imagen sea de 600px, siempre y cuando la imagen sea mayor a 700px */
+@media screen and (min-width: 700px) {
+  .hero-lower-image {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .comment-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .comment-text {
+    font-size: 18px;
+  }
+}
